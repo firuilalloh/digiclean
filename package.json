@@ -1,0 +1,21 @@
+{
+  "name": "digiclean-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --recursive --parallel run dev",
+    "dev:api": "pnpm --filter @digiclean/api dev",
+    "dev:web": "pnpm --filter @digiclean/web dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.18.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}
