@@ -9,8 +9,8 @@ const loginWithGoogle = async () => {
   try {
     await signIn.value.authenticateWithRedirect({
       strategy: "oauth_google",
-      redirectUrl: "http://localhost:5173",
-      redirectUrlComplete: "http://localhost:5173",
+      redirectUrl: "/sso-callback",
+      redirectUrlComplete: "/dashboard",
     });
   } catch (err) {
     console.error("Error Google Auth:", err);
