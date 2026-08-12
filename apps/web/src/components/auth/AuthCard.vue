@@ -9,7 +9,7 @@ const loginWithGoogle = async () => {
   try {
     await signIn.value.authenticateWithRedirect({
       strategy: "oauth_google",
-      redirectUrl: "/",
+      redirectUrl: "/sso-callback",
       redirectUrlComplete: "/",
     });
   } catch (err) {
